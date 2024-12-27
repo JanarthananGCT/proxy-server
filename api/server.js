@@ -1,5 +1,5 @@
 export default (req, res) => {
-    console.log(req)
+    console.log(req?.headers)
     res.json({
       id: 1,
       displayName: "Surveysparrow",
