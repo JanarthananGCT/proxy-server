@@ -8,7 +8,9 @@ export default async (req, res) => {
     });
     const data = await apiResponse.json();
     data.token = req?.headers?.authorization;
-    console.log(data);
+    cosole.log(req.headers, "headers")
+    console.log(req.body, "body")
+    console.log(data, "data")
 
     res.status(200).json(data);
   } catch (error) {
